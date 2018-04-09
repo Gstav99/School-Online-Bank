@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace School_Online_Bank
+namespace School_Online_Bank.Server
 {
-    class Program
+    internal class Serverprogram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
