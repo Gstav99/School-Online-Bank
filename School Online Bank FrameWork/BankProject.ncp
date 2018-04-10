@@ -1,0 +1,57 @@
+<Project>
+  <Name>BankProject</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>NetSupport</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>ClientProgram</Name>
+        <Access>Internal</Access>
+        <Location left="145" top="51" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">internal static void Main(string[] args)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>NetClient</Name>
+        <Access>Public</Access>
+        <Location left="454" top="51" />
+        <Size width="216" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">protected TcpClient client</Member>
+        <Member type="Field">protected AES aes</Member>
+        <Member type="Method">public void Connect(IPEndPoint remoteEP)</Member>
+        <Member type="Method">public Task ConnectAsync(IPEndPoint remoteEP)</Member>
+        <Member type="Method">public virtual void PerfomkeyExchange()</Member>
+        <Member type="Method">public virtual Task PerformKeyExchangeAsync()</Member>
+        <Member type="Method">public void Send(byte[] bMessage)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>BankNetClient</Name>
+        <Access>Public</Access>
+        <Location left="454" top="388" />
+        <Size width="216" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Dependency" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="2" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
